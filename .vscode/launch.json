@@ -7,8 +7,17 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Launch Program",
-			"program": "${workspaceFolder}/dist/handlers/index.js",
+			"name": "Cli Prisma",
+			"program": "${workspaceFolder}/dist/handlers/yoga-server-prisma-cli.js",
+			"outFiles": [
+				"${workspaceFolder}/**/*.js"
+			]
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Binding Prisma",
+			"program": "${workspaceFolder}/dist/handlers/yoga-server-prisma-binding.js",
 			"outFiles": [
 				"${workspaceFolder}/**/*.js"
 			]

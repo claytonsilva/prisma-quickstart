@@ -1,4 +1,5 @@
 import { users } from './user'
+import { users as userBinding } from './user_binding'
 
 const resolvers = {
   Query: {
@@ -6,4 +7,10 @@ const resolvers = {
   }
 }
 
-export { resolvers }
+const resolversBind = {
+  Query: {
+    users: userBinding
+  }
+}
+
+export { resolvers, resolversBind }

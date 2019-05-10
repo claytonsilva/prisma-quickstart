@@ -8,7 +8,8 @@ const typeDefs = importSchema('src/schema.graphql')
 const prisma = new Prisma({
   typeDefs,
   resolvers,
-  endpoint: `http://localhost:4466`
+  endpoint: `http://localhost:4466`,
+  debug: true
 })
 
 const server = new GraphQLServer({
