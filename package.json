@@ -36,5 +36,22 @@
     "prisma": "prisma",
     "build": "babel src -d dist --extensions \".js,.ts,.d.ts\" --source-maps",
     "watch": "babel src -w -d dist --extensions \".js,.ts,.d.ts\" --source-maps"
+  },
+  "engines": {
+    "node": "^11.8.0",
+    "yarn": "^1.6.0",
+    "npm": "^6.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
   }
 }
