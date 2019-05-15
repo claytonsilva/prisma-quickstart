@@ -1,9 +1,10 @@
-import { importSchema } from 'graphql-import'
+// import { importSchema } from 'graphql-import'
 import { Prisma } from '../../generated/index'
 import { GraphQLServer } from 'graphql-yoga'
 import { resolvers } from '../resolvers/index'
+import { typeDefs } from '../../generated/prisma-schema'
 
-const typeDefs = importSchema('src/schema.graphql')
+// const typeDefs = importSchema('src/schema.graphql')
 
 const prisma = new Prisma({
   typeDefs,

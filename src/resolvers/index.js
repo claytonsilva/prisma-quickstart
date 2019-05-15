@@ -1,9 +1,12 @@
-import { users } from './user'
+import { users, userSubscription } from './user'
 import { users as userBinding } from './user_binding'
 
 const resolvers = {
   Query: {
     users
+  },
+  Subscription: {
+    user: userSubscription
   }
 }
 

@@ -1,1 +1,1 @@
-# import Query.users  from '../generated/prisma-schema.graphql'
+# import Query.*  Subscription.* from '../generated/prisma-schema.graphql'
